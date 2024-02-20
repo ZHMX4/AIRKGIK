@@ -1,0 +1,63 @@
+body {
+    font-family: $font-regular;
+    font-size: 17px;
+    background-color: $color-bg;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    max-width: calc(1200px + 15px * 2);
+    padding-inline: 15px;
+    margin-inline: auto;
+
+    &--small {
+        max-width: calc(730px + 15px * 2);
+    }
+}
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    clip-path: inset(100%) !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important;
+  }
+
+.logo {
+    font-size: 36px;
+    font-family: $font-accent;
+    color: $color-white;
+    font-weight: 800;
+}
+
+.title {
+    font-family: $font-accent;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 58px;
+    letter-spacing: 0%;
+
+    &--large {
+        font-size: 44px;
+        color: $color-white;
+    }
+}
+
+.subtitle {
+    font-weight: 400;
+    color: $color-gray;
+
+    &--white {
+        color: $color-white;
+    }
+
+    &--small {
+        font-size: 14px;
+    }
+}
+

@@ -1,0 +1,47 @@
+.button {
+    display: inline-block;
+    width: 196px;
+    height: 32px;
+    padding: 7px 59px 9px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: $border-radius;
+    color: $color-white;
+    background: rgba(255, 255, 255, 0.16);
+    text-align: center;
+    transition: $transition;
+
+    @include hover {
+        background-color: rgba(255, 255, 255, 0.24);
+    }
+
+    &--vk-button {
+        position: relative;
+        height: 44px;
+        padding: 12px 41px 13px 77px;
+        color: $color-black;
+        // border: 1px solid $color-white;
+        background: $color-white;
+        white-space: nowrap;
+
+        @include hover {
+            // background-color: transparent;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+    }
+}
+
+.button-icon::before {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 42px;
+    width: 29px;
+    height: 29px;
+    z-index: 10;
+    background-image: url(./../img/icons/SVG.svg);
+    background-size: cover;
+
+}
+

@@ -1,0 +1,54 @@
+.about-us {
+
+    &__title {
+        @include mobile--small {
+            font-size: 24px;
+            text-align: center;
+        } 
+    }
+
+    &__subtitle {
+        margin-top: 16px;
+        line-height: 26px;
+
+        @include mobile--small {
+            font-size: 14px;
+            text-align: center;
+        } 
+    }
+}
+
+.about-us__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    @include tablet {
+        align-items: center;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+}
+
+.about-us__text {
+    width: 585px;
+    height: auto;
+
+    @include tablet {
+        width: 550px;
+        height: auto;
+        order: 0;
+    }
+
+    @include mobile--small {
+        width: auto;
+        height: auto;
+    }
+}
+
+.about-us__img {
+
+    @include tablet {
+        order: 1;
+    }
+}
